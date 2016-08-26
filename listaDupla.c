@@ -94,7 +94,7 @@ void destroiLista(ListaDupla l) {
   link t = l->head;
   aux = t -> item;
   while ( t != l->z ) {
-    if(t->item == aux) 
+    if(t->item < aux) 
       return t;
 }
   
