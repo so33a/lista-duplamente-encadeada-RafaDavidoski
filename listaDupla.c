@@ -89,5 +89,14 @@ void destroiLista(ListaDupla l) {
   } 
   free(t);
   free(l);
+  
+  link menorno(ListaDupla l,int aux) {
+  link t = l->head;
+  aux = t -> item;
+  while ( t != l->z ) {
+    if(t->item == aux) 
+      return t;
+}
+  
 }
 
